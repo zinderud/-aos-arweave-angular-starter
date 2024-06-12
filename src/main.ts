@@ -4,6 +4,7 @@ import {bootstrapApplication} from "@angular/platform-browser";
 import {AppComponent} from "./app/app.component";
 import {RouterModule, withComponentInputBinding} from "@angular/router";
 import {routes} from "./app/routes";
+import { ArweaveWalletKitNgModule } from 'arweave-wallet-kit-ng';
 
 if (environment.production) {
   enableProdMode();
@@ -11,7 +12,7 @@ if (environment.production) {
 
 bootstrapApplication(AppComponent, {
     providers:[
-        importProvidersFrom(RouterModule.forRoot(routes) ),
+        importProvidersFrom(RouterModule.forRoot(routes),ArweaveWalletKitNgModule.forRoot() ),
         {provide: 'ENVIRONMENT', useValue: environment}
     ]
 

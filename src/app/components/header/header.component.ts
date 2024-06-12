@@ -5,11 +5,14 @@ import { Observable } from 'rxjs';
 import { BaseComponent } from 'src/app/core/base/base.component';
 import { MenuService } from 'src/app/core/services/menu.service';
 import { MenuComponent } from '../menu/menu.component';
+import { ArweaveWalletKitNgModule, AWKConnectButtonModule, AWKConnectionModalModule, AWKProfileModalModule } from 'arweave-wallet-kit-ng';
 
 @Component({
   selector: 'main-header',
   standalone: true,
-  imports: [CommonModule,RouterModule,MenuComponent],
+  imports: [CommonModule,RouterModule,MenuComponent, AWKConnectButtonModule,
+    AWKProfileModalModule,
+    AWKConnectionModalModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })

@@ -3,11 +3,24 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "crypto": [
+        "./node_modules/crypto-js"
+      ],
+      "@angular/*": [
+        "./node_modules/@angular/*"
+      ]
+    },
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
   },
   "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
+    "src/main.ts"
   ],
   "include": [
     "src/**/*.d.ts"

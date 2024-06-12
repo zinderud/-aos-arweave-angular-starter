@@ -28,6 +28,10 @@
 
 			</a>
 		</div>
+		<awk-connect-button [size]="'md'" [label]="'Connect Wallet'">
+		</awk-connect-button>
+	
+		<awk-profile-modal [size]="'md'"></awk-profile-modal>
 		<nav class="hidden md:block flex divide-x-2 rounded dark:text-gray-100 divide-gray-700">
 
 
@@ -71,3 +75,19 @@
 		<path d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4" />
 	</symbol>
 </svg>
+<awk-connection-modal
+  [appInfo]="{
+    name: 'C8',
+    logo: 'https://capsl8.com/favicon.ico'
+  }"
+  [permissions]="[
+    'ACCESS_ADDRESS',
+    'ACCESS_PUBLIC_KEY',
+    'ACCESS_ALL_ADDRESSES',
+    'SIGN_TRANSACTION',
+    'ENCRYPT',
+    'DECRYPT',
+    'SIGNATURE',
+    'ACCESS_ARWEAVE_CONFIG',
+    'DISPATCH'
+  ]"></awk-connection-modal>
