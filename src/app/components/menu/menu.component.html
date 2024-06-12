@@ -1,0 +1,36 @@
+<!-- <div
+	#backdrop
+	class="fixed inset-0 z-30 bg-black opacity-10 lg:hidden"
+	[ngClass]="[(menuOpen | async) ? 'block' : 'hidden']"
+	(click)="closeMenu()"
+></div> -->
+<nav
+	[ngClass]="[(menuOpen | async) ? 'flex' : 'hidden', 'bg' + contrast, 'text' + defaultInv]"
+	class="fixed z-10 flex-col w-full pt-2 shadow-sm top-20"
+>
+	<div class="md:hidden">
+		<a
+			*ngFor="let category of categories"
+			class="block px-3 py-2 border-l-8 md:py-3"
+			[ngClass]="[
+				rla.isActive ? 'border' + primary : 'border' + contrast,
+				rla.isActive ? 'underline' : 'no-underline',
+				rla.isActive ? 'text' + contrastInv : 'text' + plainInv
+			]"
+			#rla="routerLinkActive"
+			routerLinkActive
+			[routerLinkActiveOptions]="{exact: category.name === 'Home'}"
+			[routerLink]="['/' + category.link]"
+			>{{ category.name }}</a
+		>
+		 
+	</div>
+</nav>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+	<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" id="menu">
+		<path
+			d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4"
+		/>
+	</symbol>
+</svg>

@@ -1,0 +1,25 @@
+<svg width="156" height="245" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g class="layer">
+  <title>Layer 1</title>
+  <g class="layer" id="svg_1">
+   <g clip-path="url(#clip0_1_23)" id="svg_4">
+    <rect fill="white" height="244.08" id="svg_5" width="155.52"/>
+    <rect fill="url(#pattern0)" height="107.759" id="svg_6" width="155" y="71.1206"/>
+    <rect fill="#E9E7E8" height="58.7013" id="svg_8" width="58.7013" x="43.2189" y="79.654"/>
+    <rect fill="#C34342" height="54" id="svg_9" width="155"/>
+    <rect fill="#C34342" height="50" id="svg_10" width="157" x="-1" y="189"/>
+    <rect fill="#B03A3A" height="36.4787" id="svg_13" rx="6.28942" width="109.017" x="23.0612" y="170.832"/>
+    <text fill="#000000" filter="url(#svg_24_blur)" font-family="serif" font-size="13" id="svg_24" stroke-width="0" text-anchor="middle" x="30" xml:space="preserve" y="41.5">prod</text>
+    <text fill="#000000" font-family="serif" font-size="13" id="svg_25" stroke-width="0" text-anchor="middle" x="67.5" xml:space="preserve" y="115">logo</text>
+    <text fill="#000000" font-family="serif" font-size="12" id="svg_27" stroke-width="0" text-anchor="middle" x="90.5" xml:space="preserve" y="185.5">start_date</text>
+    <text fill="#000000" font-family="serif" font-size="12" id="svg_29" stroke-width="0" text-anchor="middle" x="53.91406" xml:space="preserve" y="39.25">producer</text>
+    <text fill="#000000" font-family="serif" font-size="12" id="svg_30" stroke-width="0" text-anchor="middle" x="96.5" xml:space="preserve" y="198.5">expiry_date</text>
+    <text fill="#000000" font-family="serif" font-size="12" id="svg_31" stroke-width="0" text-anchor="middle" x="66.5" xml:space="preserve" y="159">id</text>
+    <text fill="#000000"  font-family="serif" font-size="5" id="svg_32" stroke-width="0" text-anchor="middle" x="78.5" xml:space="preserve" y="230.5">Blicense 2023</text>
+    <text fill="#000000" font-family="serif" font-size="12" id="svg_3" stroke="#000000" stroke-width="0" text-anchor="middle" transform="matrix(1 0 0 1 0 0)" x="38" xml:space="preserve" y="187">start:</text>
+    <text fill="#000000" font-family="serif" font-size="12" id="svg_7" stroke-width="0" text-anchor="middle" transform="matrix(1 0 0 1 0 0)" x="43" xml:space="preserve" y="199">expiry:</text>
+  
+   </g>
+  </g>
+ </g>
+</svg>
