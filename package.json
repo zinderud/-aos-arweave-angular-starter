@@ -25,6 +25,7 @@
     "arweave": "^1.15.1",
     "arweave-wallet-connector": "^1.0.2",
     "arweave-wallet-kit-ng": "^2.0.2",
+    "@ar.io/sdk":"1.2.1",
     "graphql": "^16.8.2",
     "othent": "^1.0.646",
     "primeflex": "^3.3.0",
