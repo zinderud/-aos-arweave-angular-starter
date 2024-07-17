@@ -2,43 +2,58 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+
     "baseUrl": "./",
-    "outDir": "./dist/",
+    "downlevelIteration": true,
+    "noImplicitAny": true,
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "es2020",
+ 
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "resolveJsonModule": true,
+    "skipDefaultLibCheck": true,
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2018", "dom", "esnext"],
+    "skipLibCheck": true,
+    
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck":true,
+   
     "strictPropertyInitialization": false,
     "strictFunctionTypes": false,
-    "noImplicitAny": false,
+ 
     "noImplicitOverride": false,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "declaration": false,
-    "downlevelIteration": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "resolveJsonModule": true,
+    
     "strictNullChecks": false,
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "target": "ES2022",
-    "module": "ES2022",
+    "moduleResolution": "Bundler",
+     
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
-  },"allowSyntheticDefaultImports": true,
-"paths": {
-  "crypto": ["./node_modules/crypto-browserify"] 
-},
+ 
+    "paths": { 
+      "crypto": ["./node_modules/crypto-browserify"],
+      "stream": ["./node_modules/stream-browserify"],
+      "assert": ["./node_modules/assert"],
+      "http": ["./node_modules/stream-http"],
+      "https": ["./node_modules/https-browserify"],
+      "os": ["./node_modules/os-browserify"],
+      "zlib": ["./node_modules/browserify-zlib"],
+      "path": ["./node_modules/path-browserify"],
+}
+  },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "skipLibCheck":true,
   }
 }
